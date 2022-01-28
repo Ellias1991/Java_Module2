@@ -24,7 +24,10 @@ public class Main {
         Barrier[] barriers = new Barrier[]{
                 new Track(5),
                 new Wall(10),
+
+
         };
+
         JumpersAndRunners[] jumpersAndRunners = new JumpersAndRunners[]{
                 new Cat("Murzik", 5, 8),
                 new Man("Vasily", 8, 15),
