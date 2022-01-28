@@ -25,34 +25,18 @@ public class Main {
                 new Track(5),
                 new Wall(10),
         };
-        Cat[] cats = new Cat[]{
-                new Cat("Barsik", 6, 7),
+        JumpersAndRunners[] jumpersAndRunners = new JumpersAndRunners[]{
                 new Cat("Murzik", 5, 8),
+                new Man("Vasily", 8, 15),
+                new Robot("Vitaly", 10, 100)
         };
-        for (int i = 0; i < cats.length; i++) {
-            cats[i].onlyJump();
-            cats[i].onlyRun();
-        }
-        Man[] men = new Man[]{
-                new Man("Vasily", 10, 10),
-                new Man("Petr", 7, 4),
-        };
-        for (int i = 0; i < men.length; i++) {
-            men[i].onlyJump();
-            men[i].onlyRun();
-        }
-        Robot[] robots = new Robot[]{
-                new Robot("Vitaly", 15, 10),
-                new Robot("Victor", 7, 15),
-        };
-        for (int i = 0; i < robots.length; i++) {
-            robots[i].onlyJump();
-            robots[i].onlyRun();
+        for (int i = 0; i < jumpersAndRunners.length; i++) {
+            jumpersAndRunners[i].onlyJump();
+            jumpersAndRunners[i].onlyRun();
+
         }
     }
-
 }
-
 
 
 

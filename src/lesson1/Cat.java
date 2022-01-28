@@ -1,6 +1,6 @@
 package lesson1;
 
-public class Cat implements Runnable, Jumpable, Barrier {
+public class Cat implements Runnable, Jumpable, Barrier,JumpersAndRunners {
     private String name;
     private int jumpHeight;
     private int runTime;

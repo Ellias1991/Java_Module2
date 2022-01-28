@@ -1,6 +1,6 @@
 package lesson1;
 
-public class Man implements Runnable, Jumpable, Barrier {
+public class Man implements Runnable, Jumpable, Barrier,JumpersAndRunners {
     private String name;
     private int jumpHeight;
     private int runTime;
