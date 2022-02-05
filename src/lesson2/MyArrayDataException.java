@@ -6,9 +6,9 @@ public class MyArrayDataException extends ArrayStoreException {
 
         try {
             String[][] arr = new String[][]{
-                    {"1", "2", "3", "2"},
+                    {"1", "2q", "3", "2"},
                     {"1", "5", "7", "64"},
-                    {"1", "2q", "38", "2"},
+                    {"1", "2", "38", "2"},
                     {"9", "5", "4", "78"},
             };
 
@@ -18,7 +18,7 @@ public class MyArrayDataException extends ArrayStoreException {
                 for (int j = 0; j < arr1.length; j++) {
                     arr1[i][j] = Integer.parseInt(arr[i][j]);
                     sum += arr1[i][j];
-
+                    System.out.println(sum);
                 }
                 throw new MyArrayDataException();
             }

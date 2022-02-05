@@ -11,17 +11,12 @@ public class MyArraySizeException extends IndexOutOfBoundsException {
                     {"1", "2", "38", "2"},
                     {"9", "5", "4", "78"},
             };
-            System.out.println(arr.length);
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 0; j < arr.length; j++) {
-                    if (i > 4 && j > 4) {
 
-                    }
+            System.out.println(arr[5][5]);
 
-                    throw new MyArraySizeException();
-                }
-            }
+            throw new MyArraySizeException();
         } catch (MyArraySizeException e) {
+
             e.printStackTrace();
         }
     }
