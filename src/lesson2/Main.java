@@ -15,19 +15,24 @@ public class Main {
                 for (int j = 0; j < arr.length; j++) {
 
                     arr1[i][j] = Integer.parseInt(arr[i][j]);
-                    System.out.println(arr1[i][j]);
                 }
-
             }
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    if (i > 4 && j > 4) {
 
-            arr[5][5] = "12";
-            arr[5][6] = "13";
-            throw new MyArraySizeException();
+                    }
+                }
+                throw new MyArraySizeException();
+            }
         } catch (MyArraySizeException e) {
             e.printStackTrace();
         }
-
     }
 }
+
+
+
+
 
 
