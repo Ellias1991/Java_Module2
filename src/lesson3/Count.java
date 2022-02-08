@@ -1,11 +1,10 @@
 package lesson3;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Count {
     public static void main(String[] args) {
-        List<String> fruits = new ArrayList<>();
+        List<String> fruits = new ArrayList<String>();
         fruits.add("Apple");
         fruits.add("Pear");
         fruits.add("Banana");
@@ -24,10 +23,18 @@ public class Count {
         fruits.add("Orange");
         fruits.add("Banana");
         fruits.add("Lemon");
-int sum=0;
-for(String name:fruits){
-    System.out.println(fruits );
-}
-
+        fruits.add("Banana");
+        fruits.add("Peach");
+        Map<String, Integer> map = new HashMap<String, Integer>();
+        {
+            for (String string : fruits) {
+                if (map.keySet().contains(string)) {
+                    map.put(string, map.get(string) + 1);
+                } else {
+                    map.put(string, 1);
+                }
+            }
+            System.out.println(map);
+        }
     }
 }
