@@ -11,8 +11,8 @@ public class Main {
 
 
         ArrayList<String> fruitListWithDublicates = new ArrayList<>(Arrays.asList("Apple", "Pear", "Peach", "Banana", "Orange", "Tomato",
-                "Lemon", "WaterMelon", "Tomato", "Banana", "Orange", "PineApple", "Pear", "Apple", "Banana", "Melon", "Peach",
-                "Orange", "Banana", "Grapes")
+                "Lemon", "Melon", "Tomato", "Banana", "Orange", "Apple", "Pear", "Apple", "Banana", "Melon", "Peach",
+                "Orange", "Banana", "Lemon")
         );
 
         Set<String> fruit = new LinkedHashSet<>(fruitListWithDublicates);
